@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link src="javascript.js"></link> 
+    <link href="styleformulario.css" rel="stylesheet" type="text/css">  
+
+    <title>CALCULO_SALARIO</title>
+</head>
+<body>
+
+        <form name="form1" action=""   id="form1">
+            
+            <div id="divcontenedor" class="divA">
+            <h1> CALCULO DE SALARIO </h1>
+            </div>
+
+
+            <B><br> NOMBRE EMPLEADO: </BR> </B>>
+            <div class="divinput">
+            <input type="text" placeholder="Escribe tu nombre" id="EMPLEADO" autofocus >
+            </div>
+
+
+            <BR><BR><BR>
+                <p><b>POR FAVOR SELECCIONE SU CARGO: </b> </p> <BR><BR>
+                   <div class="divinput2">
+           
+                     
+                     <input type="radio" value="SUPERVISOR" name="medio" id="medio" checked>SUPERVISOR 
+                     <input type="radio" value="SECRETARIA" name="medio" id="medio2">SECRETARIA
+                     <input type="radio" value="DIGITADOR" name="medio" id="medio3">DIGITADOR
+                     <input type="radio" value="MENSAJERO" name="medio" id="medio3">MENSAJERO
+
+                     <BR><BR><BR><BR><BR><BR>
+ <script>
+  let B;
+  let b;
+  let h; //Declaramos las variables que vamos a necesitar 
+                
+    B = parseInt(prompt('Por favor ingrese su salario base')); 
+    b = parseInt(prompt('Por favor ingrese la cantidad de su bonificación'));
+    h = parseInt(prompt('Por favor ingrese el valor de las horas extra')); 
+    let liquido = ((B + b )) + h; 
+    parseInt(liquido); 
+    
+    document.write('El salario liquido es de : ' + liquido ); //Mostramos mensaje en pantalla
+ </script>
+
+
+
+
+  <BR><BR><BR><BR><BR><BR><BR><BR>
+
+
+            <div class="divinput3">
+
+            <input type="reset" value="CANCELAR" class="submit" >  
+       
+            <input type="button" value="GUARDAR" class="submit" name="VER" onclick="alert( viaje() );">
+
+          
+            </div>
+        </form>
+
+
+</body>
+</html>
